@@ -36,6 +36,7 @@
 + add to config/environments/development.rb (config.action_mailer.default_url_options = { host: 'localhost', port: 3000 })
 + (rails generate devise:views)
 + (cp -r rails_4_setup/devise myapp/app/view/devise)
++ Readme (https://github.com/plataformatec/devise#getting-started)
 
 #### Routes
 (cp rails_4_setup/routes.rb highpraise/config/routes.rb)
@@ -66,7 +67,6 @@
 + (git push -u origin master)
 
 #### Heroku
-
 + (heroku create)
 + (git push heroku master)
 + (heroku rename myapp)
