@@ -47,9 +47,11 @@
 #### Secret Token
 (cp rails_4_setup/secret_token.rb myapp/config/initializers/secret_token.rb)
 
-#### Application.haml
+#### Standard application.haml, css and js
 (cp rails_4_setup/application.haml myapp/app/views/layouts)
 (rm highpraise/app/views/layouts/application.html.erb)
+(cp rails_4_setup/main.css.scss myapp/app/assets/stylesheets)
+(cp rails_4_setup/main.js myapp/app/assets/javascripts)
 
 #### Heroku Setup
 + (cp rails_4_setup/heroku_env_example.rb myapp/config/)
