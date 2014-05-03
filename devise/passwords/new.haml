@@ -1,0 +1,9 @@
+.form-container
+  %h3 Reset Password
+  = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+    = devise_error_messages!
+    %div
+      .form-label Email
+      = f.email_field :email, :autofocus => true, class: "form-control"
+    %div= f.submit "Send reset instructions", class: "btn btn-primary btn-submit"
+  = render "devise/shared/links"
