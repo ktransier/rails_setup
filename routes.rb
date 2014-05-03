@@ -1,10 +1,10 @@
-RightsApi::Application.routes.draw do
+MyApp::Application.routes.draw do
   authenticated :user do
-    root "", as: :authenticated_root
+    root "pages#home", as: :authenticated_root
   end
 
   unauthenticated do
-    root to: ""
+    root to: "pages#home"
   end
 
   if Rails.env == 'production'

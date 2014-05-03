@@ -16,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'unicorn-rails'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', git: 'git://github.com/seyhunak/twitter-bootstrap-rails.git', branch: "bootstrap3"
 gem "font-awesome-rails"
 
 group :development, :test do
