@@ -86,6 +86,7 @@
 + (heroku addons:add pgbackups:auto-month)
 + (heroku addons:add newrelic)
 + Setup availability pinging (https://coderwall.com/p/u0x3nw)
++ (heroku run rake db:migrate)
 + (heroku open)
 
 #### Mailgun
