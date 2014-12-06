@@ -89,6 +89,8 @@
 + (heroku run rake db:migrate)
 + (heroku open)
 
+If need to add or update SSH keys: heroku keys:add ~/.ssh/id_rsa.pub 
+
 #### Mailgun
 + (heroku addons:add mailgun)
 Add to production.rb -
@@ -96,11 +98,19 @@ Add to production.rb -
   config.action_mailer.default_url_options = { host: " " }
 
   ActionMailer::Base.smtp_settings = {
+  
     :port           => ENV['MAILGUN_SMTP_PORT'],
+    
     :address        => ENV['MAILGUN_SMTP_SERVER'],
+    
     :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    
     :domain         => " ",
+    
     :authentication => :plain,
+  
   }
+  
   ActionMailer::Base.delivery_method = :smtp
