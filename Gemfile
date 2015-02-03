@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.1.4'
 gem 'rails', '4.2.0'
-gem 'pg', '0.17.1'
-gem 'unicorn', '4.8.2'
-gem 'devise', '3.2.4'
+gem 'pg', '0.18.1'
+gem 'unicorn', '4.8.3'
+gem 'devise', '3.4.1'
 
 gem 'haml'
 gem 'jquery-rails'
