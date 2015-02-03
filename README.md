@@ -1,6 +1,6 @@
 ## Rails 4 Setup
-+ Create new app (rails new wookeyjack --database=postgresql)
-+ (cd wookeyjack)
++ Create new app (rails new myapp --database=postgresql)
++ (cd myapp)
 
 #### Gemfile
 + Add Gemfile (cp ../rails_4_setup/Gemfile .)
@@ -8,12 +8,11 @@
 + (bundle)
 
 #### Postgres Setup
-+ (cp ../rails_4_setup/database_example.yml ./config)
-+ (cp ../rails_4_setup/database_example.yml ./config/database.yml)
 + Change database to correct database name in database.yml
++ Copy database.yml and rename database-example.yml
 + Change username to myusername in database.yml
-+ in psql: (CREATE DATABASE wookeyjack_development;)
-+ in psql: (CREATE DATABASE wookeyjack_test;)
++ in psql: (CREATE DATABASE myapp_development;)
++ in psql: (CREATE DATABASE myapp_test;)
 
 #### Unicorn
 + Readme (https://devcenter.heroku.com/articles/rails-unicorn)
