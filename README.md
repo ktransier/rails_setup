@@ -16,7 +16,7 @@
 #### [Unicorn](https://devcenter.heroku.com/articles/rails-unicorn)
 + Add Procfile (cp ../rails_4_setup/Procfile .)
 + Add Unicorn.rb to config (cp ../rails_4_setup/unicorn.rb ./config)
-+ (rails s) Navigate to http://localhost:8080/
++ (rails s) Navigate to http://localhost:3000/
 
 #### Devise
 + (rails g model user)
