@@ -101,3 +101,6 @@ Add to production.rb -
   
   ActionMailer::Base.delivery_method = :smtp
 ```
+
+#### Domain
++ Change config.mailer_sender in Devise initializer
