@@ -10,18 +10,13 @@
 #### Postgres Setup
 + Change database to correct database name in database.yml
 + Copy database.yml and rename database-example.yml
-+ Change username to myusername in database.yml
 + in psql: (CREATE DATABASE myapp_development;)
 + in psql: (CREATE DATABASE myapp_test;)
 
-#### Unicorn
-+ Readme (https://devcenter.heroku.com/articles/rails-unicorn)
+#### [Unicorn](https://devcenter.heroku.com/articles/rails-unicorn)
 + Add Procfile (cp ../rails_4_setup/Procfile .)
 + Add Unicorn.rb to config (cp ../rails_4_setup/unicorn.rb ./config)
-
-#### Test Server
-+ (rails s)
-+ (http://localhost:8080/)
++ (rails s) Navigate to http://localhost:8080/
 
 #### Devise
 + (rails g model user)
@@ -40,7 +35,6 @@
 + (rails g controller pages home)
 + (cp ../rails_4_setup/home.haml ./app/views/pages/)
 + (rm ./app/views/pages/home.html.erb)
-
 
 #### Routes
 + (cp ../rails_4_setup/routes.rb ./config/routes.rb)
