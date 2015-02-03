@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
-gem 'rails', '4.1.0'
+ruby '2.1.4'
+gem 'rails', '4.2.0'
 gem 'pg', '0.17.1'
 gem 'unicorn', '4.8.2'
 gem 'devise', '3.2.4'
